@@ -1,0 +1,343 @@
+/**************************
+    Total Configure
+    Made by Aizat Kamal
+**************************/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --redColor: #aa0000;
+  --blackColor: #1a1a1a;
+  --greyColor: #edebe9;
+}
+
+::selection {
+  background-color: var(--redColor);
+  color: var(--greyColor);
+}
+
+body {
+  /* padding: 2em; */
+  font-family: sans-serif;
+  color: var(--blackColor);
+  line-height: 1.4;
+}
+
+header {
+  padding: 2em 2em 1em 2em;
+  background-color: var(--greyColor);
+}
+
+nav div {
+  display: inline;
+  vertical-align: middle;
+}
+
+.logo img {
+  max-width: 120px;
+}
+
+.display-menu {
+  position: fixed;
+  overflow-x: hidden;
+  background-color: rgba(170, 0, 0, 0.95);
+  color: var(--greyColor);
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  transition: 0.2s;
+}
+
+.display-menu > a {
+  position: absolute;
+  top: 10%;
+  right: 20%;
+}
+
+.display-menu a:hover, .display-menu a:focus {
+  color: white;
+}
+
+.menu-list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.menu-list > a {
+  display: block;
+  margin-bottom: 1.2em;
+}
+
+.socmed a {
+  padding: 0 0.5em;
+}
+
+.menu-icon {
+  padding-top: 0.6em;
+  float: right;
+  cursor: pointer;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h2 {
+  border-bottom: 5px solid var(--redColor);
+  margin: 0 1em;
+  padding-bottom: 0.2em;
+}
+
+.hero {
+  padding: 2em 2em;
+  text-align: center;
+  background-color: var(--greyColor);
+}
+
+.hero img {
+  max-width: 100%;
+}
+
+.about {
+  padding: 3em 2em;
+  text-align: center;
+  background-color: var(--blackColor);
+  color: var(--greyColor);
+}
+
+.about p {
+  padding: 0.5em 0;
+}
+
+.contact-btn {
+  margin: 1em 0 0 0;
+}
+
+.contact-btn button {
+  padding: 1em;
+  background-color: var(--redColor);
+  border-color: var(--redColor);
+  border-radius: 7px;
+  color: var(--greyColor);
+  cursor: pointer;
+}
+
+.contact-btn button:hover, .contact-btn button:focus {
+  background-color: var(--greyColor);
+  color: var(--blackColor);
+}
+
+.services {
+  padding: 2em 0;
+  text-align: center;
+}
+
+.services p {
+  padding: 1em 2em 0.2em 2em;
+}
+
+.services ul {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.services li {
+  list-style-type: none;
+  padding: 0.5em 0;
+}
+
+.services li i {
+  color: var(--redColor);
+}
+
+.service-image img {
+  width: 420px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.services > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.services > div > div {
+  flex-basis: 30%;
+  /* height: 33vh; */
+  position: relative;
+}
+
+.service-image h3 {
+  position: absolute;
+  top: 0;
+  background: rgba(170, 0, 0, 0.8);
+  color: white;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  text-align: center;
+  padding-top: 28%;
+}
+
+.service-image h3:hover {
+  opacity: 1;
+}
+
+.team {
+  padding: 2em;
+  text-align: center;
+  background-color: var(--blackColor);
+  color: var(--greyColor);
+}
+
+.team h2 {
+  margin-bottom: 1em;
+}
+
+.team > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.team > div > div {
+  flex-basis: 50%;
+  margin: 1em;
+}
+
+.team img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 3px solid var(--redColor);
+}
+
+.clients {
+  padding: 2em;
+  text-align: center;
+  background-color: var(--greyColor);
+}
+
+.clients img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  margin: 0.5em 2em;
+}
+
+footer {
+  padding: 2em;
+  background-color: var(--redColor);
+  text-align: center;
+}
+
+footer > a {
+  text-decoration: none;
+  color: var(--greyColor);
+  padding: 0 0.5em;
+}
+
+footer > a:hover, footer a:focus {
+  color: white;
+}
+
+.logo-footer img {
+  width: 200px;
+}
+
+.contact-footer {
+  padding: 0.5em 0 2em 0;
+  color: var(--greyColor);
+}
+
+.socmed-footer a {
+  padding: 0 0.5em;
+}
+
+.copyright {
+  padding-top: 2em;
+  color: var(--greyColor);
+}
+
+.socmed-footer a, .copyright a {
+  text-decoration: none;
+  color: var(--greyColor);
+}
+
+.socmed-footer a:hover, .socmed-footer a:focus, .copyright a:hover, .copyright a:focus {
+  color: white;
+}
+
+.totop {
+  display: none;
+  position: fixed;
+  bottom: 1em;
+  right: 3.5em;
+  padding: 0.5em;
+  background-color: rgba(170, 0, 0, 0.8);
+  color: var(--greyColor);
+  border: 2px solid var(--greyColor);
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.totop:hover, .totop:focus {
+  background-color: var(--redColor);
+}
+
+@media only screen and (min-width: 600px) {
+
+  h2 {
+    margin: 0 2em;
+  }
+
+  .about p, .services p {
+    margin: 0 5em;
+  }
+
+  .team {
+    padding: 2em 8em;
+  }
+
+  .team p {
+    padding-bottom: 2em;
+  }
+
+  .team > div > div {
+    flex-basis: 20%;
+  }
+
+}
+
+
+@media only screen and (min-width: 900px) {
+
+  h2 {
+    margin: 0 10em;
+  }
+
+  .about p, .services p {
+    margin: 0 10em;
+  }
+
+}
